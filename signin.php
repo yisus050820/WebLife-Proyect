@@ -62,7 +62,8 @@ unset($_SESSION['signin-data']);
 					</div>
 				</div>
 				<a href="#">¿Olvidaste tu contraseña?</a>
-				<input type="submit" class="btn" value="Login" name="submit">
+				<input type="submit" class="btn" value="Iniciar Sesion" name="submit">
+				
 				<small>¿Aún no tienes una cuenta? <a href="signup.php">Crear cuenta</a></small>
 			</form>
 		</div>

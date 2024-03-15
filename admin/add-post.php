@@ -11,7 +11,7 @@ $body = $_SESSION['add-post-data']['body'] ?? null;
 
 // delete form data session
 unset($_SESSION['add-post-data']);
-?>
+?>  
 
 
 

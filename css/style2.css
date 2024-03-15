@@ -9,6 +9,24 @@ body{
     /*overflow: hidden;*/
 }
 
+  
+.avatar-file-label {
+	display: inline-block;
+	padding: 10px 15px;
+	background-color: #38d39f; /* Verde */
+	color: white; /* Texto blanco */
+	border-radius: 4px; /* Bordes redondeados */
+	cursor: pointer; /* Cursor como puntero */
+	/*margin-top: 2px;  Espaciado superior */
+	font-size: 16px; /* Tamaño del texto */
+	
+  }
+  
+  .avatar-file-label:hover {
+	background-color: #26906d; /* Un verde más oscuro para el hover */
+  }
+
+
 .wave{
 	position: fixed;
 	bottom: 0;
@@ -141,8 +159,9 @@ form{
 	background: none;
 	padding: 0.5rem 0.7rem;
 	font-size: 1.2rem;
-	color: #555;
+	color: #555555;
 	font-family: 'poppins', sans-serif;
+	
 }
 
 .input-div.pass{
@@ -180,8 +199,12 @@ a:hover{
 	cursor: pointer;
 	transition: .5s;
 }
+
+
+
 .btn:hover{
 	background-position: right;
+	background-color: #26906d;
 }
 
 .login-content .input-div {

@@ -102,10 +102,13 @@ unset($_SESSION['signup-data']);
                     </div>
                 </div>
                 
-                    <input type="file" name="avatar" id="avatar" style="margin-top: 0px;">
+                    <hr>
+                    <input type="file" name="avatar" id="avatar" style="display: none;">
+                    <label for="avatar" class="avatar-file-label">Seleccionar imagen</label>
                     <hr>
                     <label for="suscripcion" onclick="redirectToPage()">Aceptar terminos y condiciones </label>
                     <input type="checkbox" id="suscripcion" name="suscripcion">
+                    <hr>
                 
                 <input type="submit" class="btn" value="Registrarse" name="submit">
                 <small>¿Ya tienes una cuenta? <a href="signin.php">Iniciar Sesión</a></small>

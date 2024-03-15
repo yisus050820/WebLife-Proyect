@@ -2,14 +2,14 @@ const navItems = document.querySelector('.nav__items');
 const openNavBtn = document.querySelector('#open__nav-btn');
 const closeNavBtn = document.querySelector('#close__nav-btn');
 
-// opens nav dropdown
+// Abre el menú de navegación
 const openNav = () => {
     navItems.style.display = 'flex';
     openNavBtn.style.display = 'none';
     closeNavBtn.style.display = 'inline-block';
 }
 
-// close nav dropdown
+// Cierra el menú de navegación
 const closeNav = () => {
     navItems.style.display = 'none';
     openNavBtn.style.display = 'inline-block';
@@ -19,20 +19,18 @@ const closeNav = () => {
 openNavBtn.addEventListener('click', openNav);
 closeNavBtn.addEventListener('click', closeNav);
 
-
-
-
 const sidebar = document.querySelector('aside');
 const showSidebarBtn = document.querySelector('#show__sidebar-btn');
 const hideSidebarBtn = document.querySelector('#hide__sidebar-btn');
 
-// shows sidebar on small devices
+// Muestra la barra lateral en dispositivos pequeños
 const showSidebar = () => {
     sidebar.style.left = '0';
     showSidebarBtn.style.display = 'none';
     hideSidebarBtn.style.display = 'inline-block';
 }
-// hides sidebar on small devices
+
+// Oculta la barra lateral en dispositivos pequeños
 const hideSidebar = () => {
     sidebar.style.left = '-100%';
     showSidebarBtn.style.display = 'inline-block';
@@ -41,3 +39,6 @@ const hideSidebar = () => {
 
 showSidebarBtn.addEventListener('click', showSidebar);
 hideSidebarBtn.addEventListener('click', hideSidebar);
+
+
+
