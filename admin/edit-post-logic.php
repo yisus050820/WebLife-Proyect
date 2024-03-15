@@ -16,11 +16,11 @@ if (isset($_POST['submit'])) {
 
     // check and validate input values
     if (!$title) {
-        $_SESSION['edit-post'] = "Couldn't update post. Invalid form data on edit post page.";
+        $_SESSION['edit-post'] = "No se pudo actualizar la publicación. Datos de formulario no válidos en la página de edición de publicación.";
     } elseif (!$category_id) {
-        $_SESSION['edit-post'] = "Couldn't update post. Invalid form data on edit post page.";
+        $_SESSION['edit-post'] = "No se pudo actualizar la publicación. Datos de formulario no válidos en la página de edición de publicación.";
     } elseif (!$body) {
-        $_SESSION['edit-post'] = "Couldn't update post. Invalid form data on edit post page.";
+        $_SESSION['edit-post'] = "No se pudo actualizar la publicación. Datos de formulario no válidos en la página de edición de publicación.";
     } else {
         // delete existing thumbnail if new thumbail is available
         if ($thumbnail['name']) {

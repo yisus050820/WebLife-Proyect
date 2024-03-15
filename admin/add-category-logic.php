@@ -7,9 +7,9 @@ if (isset($_POST['submit'])) {
     $description = filter_var($_POST['description'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
     if (!$title) {
-        $_SESSION['add-category'] = "Enter title";
+        $_SESSION['add-category'] = "Introduce el título";
     } elseif (!$description) {
-        $_SESSION['add-category'] = "Enter description";
+        $_SESSION['add-category'] = "Introduce la descripción";
     }
 
     // redirect back to add category page with form data if there was invalid input
@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
         $query = "INSERT INTO categories (title, description) VALUES ('$title', '$description')";
         $result = mysqli_query($connection, $query);
         if (mysqli_errno($connection)) {
-            $_SESSION['add-category'] = "Couldn't add category";
+            $_SESSION['add-category'] = "No se pudo agregar categoría";
             header('location: ' . ROOT_URL . 'admin/add-category.php');
             die();
         } else {

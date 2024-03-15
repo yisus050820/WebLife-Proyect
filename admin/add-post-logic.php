@@ -14,13 +14,13 @@ if (isset($_POST['submit'])) {
 
     // validate form data
     if (!$title) {
-        $_SESSION['add-post'] = "Enter post title";
+        $_SESSION['add-post'] = "Ingrese el título de la publicación";
     } elseif (!$category_id) {
-        $_SESSION['add-post'] = "Select post category";
+        $_SESSION['add-post'] = "Seleccionar categoría de publicación";
     } elseif (!$body) {
-        $_SESSION['add-post'] = "Enter post body";
+        $_SESSION['add-post'] = "Ingresar cuerpo de la publicación";
     } elseif (!$thumbnail['name']) {
-        $_SESSION['add-post'] = "Choose post thumbnail";
+        $_SESSION['add-post'] = "Elige la miniatura de la publicación";
     } else {
         // WORK ON THUMBNAIL
         // rename the image
@@ -39,10 +39,10 @@ if (isset($_POST['submit'])) {
                 // upload thumbnail
                 move_uploaded_file($thumbnail_tmp_name, $thumbnail_destination_path);
             } else {
-                $_SESSION['add-post'] = "File size too big. Should be less than 2mb";
+                $_SESSION['add-post'] = "El tamaño del archivo es demasiado grande. Debe ser menos de 2mb";
             }
         } else {
-            $_SESSION['add-post'] = "File should be png, jpg, or jpeg";
+            $_SESSION['add-post'] = "El archivo debe ser png, jpg o jpeg.";
         }
     }
 
