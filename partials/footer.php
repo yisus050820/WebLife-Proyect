@@ -95,7 +95,7 @@
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="img/logotipo-sleedw.svg" alt="Logo de SLee Dw">
+                        <img src="img/logo.png" alt="Logo de SLee Dw">
                     </a>
                 </figure>
             </div>
@@ -107,10 +107,9 @@
             <div class="box">
                 <h2>SIGUENOS</h2>
                 <div class="red-social">
-                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-envelope"></a>
                     <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-youtube"></a>
+                    
                 </div>
             </div>
         </div>

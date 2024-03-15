@@ -68,7 +68,7 @@ if (isset($_GET['id'])) {
                             $author_result = mysqli_query($connection, $author_query);
                             $author = mysqli_fetch_assoc($author_result);
                             ?>
-                            <div class="post__author-avatar">
+                            <!--<div class="post__author-avatar">
                                 <img src="./images/<?= $author['avatar'] ?>">
                             </div>
                             <div class="post__author-info">
@@ -76,7 +76,7 @@ if (isset($_GET['id'])) {
                                 <small>
                                     <?= date("M d, Y - H:i", strtotime($post['date_time'])) ?>
                                 </small>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </article>
