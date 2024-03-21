@@ -108,7 +108,7 @@
                 <h2>SIGUENOS</h2>
                 <div class="red-social">
                     <a href="#" class="fa fa-envelope"></a>
-                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="https://www.instagram.com/weblife.0/" class="fa fa-instagram"></a>
                     
                 </div>
             </div>
