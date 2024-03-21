@@ -71,7 +71,7 @@ $posts = mysqli_query($connection, $query);
                         $author = mysqli_fetch_assoc($author_result);
 
                         ?>
-                        <!--<div class="post__author-avatar">
+                        <div class="post__author-avatar">
                             <img src="./images/<?= $author['avatar'] ?>">
                         </div>
                         <div class="post__author-info">
@@ -79,7 +79,7 @@ $posts = mysqli_query($connection, $query);
                             <small>
                                 <?= date("M d, Y - H:i", strtotime($post['date_time'])) ?>
                             </small>
-                        </div> -->
+                        </div> 
                     </div>
                 </div>
             </article>
